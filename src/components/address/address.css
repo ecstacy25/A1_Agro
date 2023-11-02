@@ -1,0 +1,66 @@
+/* .heder {
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+
+  .head {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #fff;
+    /* position: relative;
+    /* padding-bottom: 0; */
+}
+
+.text1 {
+    color: black;
+}
+
+.office1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.emails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+  
+.phones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .head {
+        /* display: flex; */
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .heder {
+        display: none;
+    }
+    .about_us {
+        height: fit-content;
+    }
+}

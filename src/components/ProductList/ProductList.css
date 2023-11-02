@@ -1,0 +1,57 @@
+body {
+    background-color:rgb(1, 36, 1);
+
+}
+.product-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(1, 36, 1);
+  }
+  
+  .product-card-container {
+    border: 3px solid yellowgreen;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    background-color: rgba(2, 61, 20, 0.253);
+  }
+
+  .product-card-container:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+  
+  .Our {
+    border-top: 5rem;
+    border-color: white;
+    margin: 0;
+    font-size: 55px;
+    line-height: 50px;
+    font-weight: 700;
+    text-align: center;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(
+      180deg,
+      rgb(5, 109, 5) 0%,
+      rgb(251, 190, 62) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    font-family: "Sora";
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .Our {
+        font-size: 30px;
+    }
+  }
