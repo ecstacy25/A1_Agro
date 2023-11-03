@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+.map {
+  width: 40rem;
+  height: 20rem;
+  margin-top: 50px;
+}
+
 .con {
   margin-top: 0.5rem;
   height: 0.5rem;
@@ -169,6 +175,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .map {
+    width: 25rem;
+    height: 10rem;
+    margin-top: 0;
+    
   }
   .email a {
 padding-right: 95px;

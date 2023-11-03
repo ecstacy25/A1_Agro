@@ -16,6 +16,17 @@ import Beans from "../../assets/Beans.jpeg";
 import Veggies from "../../assets/Veggies.jpeg";
 
 
+const MovingText = ({ text }) => {
+  return (
+    <div className="moving-text">
+      <marquee behavior="scroll" direction="left">
+        {text}
+      </marquee>
+    </div>
+  );
+};
+
+
 const products = [
     {
       name: 'Loofah Sponge',
@@ -75,31 +86,34 @@ const products = [
     {
         name: 'Melon',
         image: Melon,
-        description: 'Melon, also known as Egusi in West Africa, refers to a type of edible seed derived from melon plants. Commonly used in various culinary dishes, particularly in Nigerian cuisine, melon seeds are valued for their rich nutty flavor and high nutritional content. ',
+        description: 'Melon, also known as Egusi in West Africa, refers to a type of edible seed derived from melon plants. Commonly used in various culinary dishes, particularly in Nigerian cuisine, melon seeds are valued for their rich nutty flavor and high nutritional content.',  
       },
     
   ];
 
 const ProductList = () => {
   return (
-    <section className='ProductList' id='ProductList'>
-        <img className='about_line' src={Line} alt='line' width={100} height={7} />
-      <h1 className='Our'>Our Products</h1>  
-    <div className="product-list-container">
-    
-      {products.map((product, index) => (
-        <ProductCard
-          key={index}
-          name={product.name}
-          image={product.image}
-          description={product.description}
-        />
-        
-      ))}
-    </div>
+    <section className="ProductList" id="ProductList">
+      <img className="about_line" src={Line} alt="line" width={100} height={7} />
+      <h1 className="Our">
+        Our Products
+      </h1>
+
+      <div className="product-list-container">
+        {products.map((product, index) => (
+          <ProductCard
+            key={index}
+            name={product.name}
+            image={product.image}
+            description={product.description}
+          />
+        ))}
+        <div className='moving-text marquee'>
+        <MovingText className  text="Don't hesitate to order a wide range of agricultural products as we are fully equipped to fulfill your requests!" />
+        </div>
+      </div>
     </section>
   );
 };
 
 export default ProductList;
-
